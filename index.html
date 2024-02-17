@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Mom</title>
+  <meta property="og:title" content="your mom">
+    <meta name="twitter:title" content="your mom">
+  
+
+  
+    <meta name="theme-color" content="#000000">
+  
+
+  
+    
+      <meta name="og:image" content="boss.PNG">
+      <meta name="twitter:image" content="boss.PNG">
+    
+  
+
+  
+    <meta property="og:description" content="your mom">
+    <meta name="description" content="your mom">
+    <meta property="twitter:description" content="your mom">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      flex-direction: column; /* Added to stack the divs vertically */
+    }
+
+    #cube-container {
+      margin-bottom: 20px; /* Added space between cube and title */
+      position: relative;
+      width: 200px;
+      height: 200px;
+      perspective: 600px;
+    }
+
+    #cube {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      animation: spin 5s infinite linear;
+      cursor: grab;
+      user-select: none;
+    }
+
+    #cube img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes spin {
+      from { transform: rotateX(0) rotateY(0) rotateZ(0); }
+      to { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+    }
+
+    #urmom {
+      font-family: 'Arial', sans-serif;
+      font-size: 2em;
+      color: #ff4500;
+      text-align: center;
+    }
+
+    #urmom span {
+      display: inline-block;
+    }
+
+    #urmom span:nth-child(1) { animation: flame 1s infinite 0.1s; }
+    #urmom span:nth-child(2) { animation: flame 1s infinite 0.2s; }
+    #urmom span:nth-child(3) { animation: flame 1s infinite 0.3s; }
+    #urmom span:nth-child(4) { animation: flame 1s infinite 0.4s; }
+    #urmom span:nth-child(5) { animation: flame 1s infinite 0.5s; }
+
+    @keyframes flame {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="cube-container">
+    <div id="cube">
+      <img src="boss.png" alt="Cube Texture">
+    </div>
+  </div>
+
+  <div id="urmom">
+    <span>u</span>
+    <span>r</span>
+    <span>m</span>
+    <span>o</span>
+    <span>m</span>
+  </div>
+  <br>
+ <!-- <a href="https://neuro.us.to">contact</a>-->
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
